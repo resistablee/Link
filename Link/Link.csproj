@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Figensoft.NET.Framework" Version="1.5.4" />
+    <PackageReference Include="MyCSharp.HttpUserAgentParser.AspNetCore" Version="3.0.4" />
+  </ItemGroup>
+
+</Project>

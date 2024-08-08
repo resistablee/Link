@@ -1,0 +1,30 @@
+﻿@using Link.Models
+@model UserAgentModel
+@{
+    ViewData["Title"] = "ParsedUserAgent";
+}
+
+<h1>ParsedUserAgent</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>User Agent</th>
+            <th>Browser</th>
+            <th>Browser Version</th>
+            <th>Platform Type</th>
+            <th>Platform</th>
+            <th>Platform Version</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.UserAgent</td>
+            <td>@Model.Browser.Name</td>
+            <td>@Model.Browser.Version</td>
+            <td>@Model.Platform.Type</td>
+            <td>@Model.Platform.Name</td>
+            <td>@Model.Platform.Version</td>
+        </tr>
+    </tbody>
+</table>

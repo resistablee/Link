@@ -1,0 +1,54 @@
+﻿@using Link.Models;
+@model IPGeolocationModel;
+@{
+    ViewData["Title"] = "IPIPGeolocationModellocationInfo";
+}
+
+<h1>IPIPGeolocationModellocationInfo</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>IP</th>
+            <th>Continent Code</th>
+            <th>Continent Name</th>
+            <th>Country Code</th>
+            <th>Country Name</th>
+            <th>Country Name (Native)</th>
+            <th>Official Country Name</th>
+            <th>Region Code</th>
+            <th>Region Name</th>
+            <th>City GeoName ID</th>
+            <th>City</th>
+            <th>Postal Code</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Capital</th>
+            <th>Phone Code</th>
+            <th>Country Flag Emoji</th>
+            <th>Is EU</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Ip</td>
+            <td>@Model.ContinentCode</td>
+            <td>@Model.ContinentName</td>
+            <td>@Model.CountryCode</td>
+            <td>@Model.CountryName</td>
+            <td>@Model.CountryNameNative</td>
+            <td>@Model.OfficialCountryName</td>
+            <td>@Model.RegionCode</td>
+            <td>@Model.RegionName</td>
+            <td>@Model.CityGeoNameId</td>
+            <td>@Model.City</td>
+            <td>@Model.PostalCode</td>
+            <td>@Model.Latitude</td>
+            <td>@Model.Longitude</td>
+            <td>@Model.Capital</td>
+            <td>@Model.PhoneCode</td>
+            <td>@Model.CountryFlagEmoj</td>
+            <td>@Model.IsEu</td>
+        </tr>
+    </tbody>
+</table>
